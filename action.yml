@@ -1,0 +1,19 @@
+name: "Tutorial Generator"
+author: "Suzanna"
+description: "This is a sample file created using the linkedin GitHub certification path"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "green"
+inputs:
+  email:
+    description: Please enter your gitHub email address
+    required: true
+    default:  ${{github.actor}}@localhost
+  name:
+    description: Please enter your gitHub user name
+    required: true
+    default:  ${{github.actor}}
+    
